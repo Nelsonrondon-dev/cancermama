@@ -5,54 +5,100 @@
 @endsection
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Subir imagenes</h1>
-                
 
-                <form action="{{route('admin.files.store')}}"
+    <div class="" style="background: #ffafdc;padding-right: 1rem !important;" >
+        <div class="row">
+            <img src="{{asset('img/banner.png')}}" alt="" style="width: 70vw;background: #ffafdc;">
+        </div>
+        <div class="row justify-content-center" style="position: relative;top: 2vw;">
+        
+        <img src="{{asset('img/icono.png')}}" alt="" style="width: 4vw; ">
+
+        </div>
+    </div>
+
+    <div class="container mt-5">
+
+
+      
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <h1 style="text-align: center; color: rgb(255, 175, 220);font-weight: bold;">Efecto de Fotos</h1>
+                <form  action="{{route('admin.files.store')}}"
                     method="POST"
-                    class="dropzone"
+                    class="dropzone mt-5 mb-5"
                     id="my-awesome-dropzone">
                 </form>
-
-
-
-
 
             </div>
         </div>
 
         <div class="row">
 
+                <div class="col-12">
+                    <h2 style="text-align: center; color: rgb(255, 175, 220); font-weight: 900;font-size: 2.25rem;">Descarga tu foto aquí</h2>
+                </div>
 
+                <div id="nuevo" class="row row-cols-1 row-cols-md-3 m-3">
 
-
-
-
-            <div id="nuevo" class="row row-cols-1 row-cols-md-3 m-3">
                 <div id="muestra-1" class="col mb-4">
+
                   <div class="card">
                     <img src="{{asset('img/tipo-1.jpg')}}" class="card-img-top" alt="...">
-                   
                   </div>
+
                 </div>
+
                 <div class="col mb-4" id="muestra-2">
+
                   <div   class="card">
                     <img src="{{asset('img/tipo-2.jpg')}}" class="card-img-top" alt="...">
-                   
                   </div>
+
                 </div>
              
 
               </div>
 
 
+        </div>
+
     </div>
+
+
+    <div class="container-fluid-sm"  >
+
+        <div class="row justify-content-center" style="position: relative;top: 2vw;">
+            <img src="{{asset('img/icono2.png')}}" alt="" style="width: 4vw; ">
+        </div>
+
+        <div class="row">
+            <img src="{{asset('img/banner2.png')}}" alt="" style="width: 102vw;background: #ffafdc;">
+        </div>
+
+        <div class="row justify-content-center mb-5 mr-2 ml-2" >
+            <img src="{{asset('img/logo-empresa.jpg')}}" alt="" style="width: 15vw;background: #ffafdc;"><br>
+
+            <div class="col-12" style="text-align: center;">
+                <div>BD Logo es una marca registrada de Becton, Dickinson and Company. El uso de este marco es responsabilidad de quien voluntariamente lo aplique.</div>
+                
+                <div style="font-weight: bold;">© 2021  BD. Todos los derechos reservados. A menos que se especique lo contrario, BD, el Logo BD y todas las demás marcas comerciales son propiedad de<br>
+                    Becton Dickinson &amp; Company.
+                </div>
+            </div>
+           
+        </div>
+
+    </div>
+</div>
+
+
 
     
 @endsection
+
+
 
 @section('js')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.js"></script>
@@ -63,7 +109,7 @@
                 'X-CSRF-TOKEN' : "{{csrf_token()}}"
             },
             paramName: "file",
-            dictDefaultMessage: "Arrastre una imagen al recuadro para subirlo",
+            dictDefaultMessage: "Coloca una foto o imagen para empezar",
             acceptedFiles: "image/*",
             maxFilesize: 2,
             maxFiles: 4,
