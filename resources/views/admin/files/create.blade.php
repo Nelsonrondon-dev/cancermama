@@ -124,7 +124,7 @@
             error: function(file,response) {
                 console.log(file);
                 console.log(response);
-                var message = response.errors.file[0];
+                var message = response;
                 $(file.previewElement).find('.dz-error-message').text(message);
                 $(file.previewElement).removeClass('dz-complete');
                 $(file.previewElement).addClass('dz-error');
