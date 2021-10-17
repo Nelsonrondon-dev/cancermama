@@ -65,9 +65,8 @@ class FileController extends Controller
         $img1 = Image::make($request->file('file'))->resize(800, 800);
         $img2 = Image::make($request->file('file'))->resize(800, 800);
 
-
-        $logo1 = Image::make(public_path('img/logo.png'))->resize(800, 800);
-        $logo2 = Image::make(public_path('img/logo-2.png'))->resize(800, 800);
+        $logo1 = Image::make('https://enoctubrebdsevistederosa.com.co/img/logo.png')->resize(800, 800);
+        $logo2 = Image::make('https://enoctubrebdsevistederosa.com.co//img/logo-2.png')->resize(800, 800);
 
         $img1->insert( $logo1);
         $img2->insert( $logo2);
