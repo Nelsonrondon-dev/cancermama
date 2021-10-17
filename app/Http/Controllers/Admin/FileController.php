@@ -59,8 +59,8 @@ class FileController extends Controller
         $nombre1 = '1-' . $request->file('file')->getClientOriginalName();
         $nombre2 = '2-' . $request->file('file')->getClientOriginalName();
 
-        $ruta1 = storage_path() . '\app\public\imagenes/' . $nombre1;
-        $ruta2 = storage_path() . '\app\public\imagenes/' . $nombre2;
+        $ruta1 = storage_path() . '/app/public/imagenes/' . $nombre1;
+        $ruta2 = storage_path() . '/app/public/imagenes/' . $nombre2;
 
         $img1 = Image::make($request->file('file'))->resize(800, 800);
         $img2 = Image::make($request->file('file'))->resize(800, 800);
