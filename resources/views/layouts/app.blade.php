@@ -61,6 +61,18 @@
 .dropzone .dz-message .dz-button {
 	font-size: 1.5em !important;
 }
+.btn-primary {
+	color: #fff;
+	background-color: #ffafdc;
+	border-color: #ffafdc;
+}
+
+.btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
+	color: #fff;
+	background-color: #ed4b87;
+	border-color: #ed4b87;
+}
+
     </style>
 </body>
 </html>
