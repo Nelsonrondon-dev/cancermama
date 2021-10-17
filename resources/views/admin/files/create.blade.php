@@ -111,7 +111,7 @@
             paramName: "file",
             dictDefaultMessage: "Coloca una foto o imagen para empezar",
             acceptedFiles: "image/*",
-            maxFilesize: 2,
+            maxFilesize: 15,
             maxFiles: 4,
 
             success: function (file, response) {
@@ -122,6 +122,8 @@
                 }
             },
             error: function(file,response) {
+                console.log(file);
+                console.log(response);
                 var message = response.errors.file[0];
                 $(file.previewElement).find('.dz-error-message').text(message);
                 $(file.previewElement).removeClass('dz-complete');

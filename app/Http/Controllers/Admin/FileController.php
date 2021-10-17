@@ -53,7 +53,7 @@ class FileController extends Controller
         // ]);
 
         $request->validate([
-                'file' => 'required|image|max:5000'
+                'file' => 'required|image|max:15000'
             ]);
         
         $nombre1 = '1-' . $request->file('file')->getClientOriginalName();
