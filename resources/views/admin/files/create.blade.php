@@ -113,6 +113,7 @@
             acceptedFiles: "image/*",
             maxFilesize: 15,
             maxFiles: 4,
+            timeout: 180000,
 
             success: function (file, response) {
                 if (file.status = 'success'){
