@@ -21,12 +21,12 @@
 
 
     <style>
-        .tamno-banne{
+        .tamno-banner{
             width: 70vw;
         }
 
         @media (max-width: 575.98px) { 
-            .tamno-banne{
+            .tamno-banner{
                 width: 100vw !important;
         }
         }
