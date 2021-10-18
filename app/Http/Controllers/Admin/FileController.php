@@ -56,14 +56,14 @@ class FileController extends Controller
                 'file' => 'required|image|max:15000'
             ]);
         
-        $nombre1 = '1-' . $request->file('file')->getClientOriginalName();
-        $nombre2 = '2-' . $request->file('file')->getClientOriginalName();
+        $nombre1 = Str::random(10).'-1-' . $request->file('file')->getClientOriginalName();
+        $nombre2 = Str::random(10).'-2-' . $request->file('file')->getClientOriginalName();
 
         $ruta1 = storage_path() . '/app/public/imagenes/' . $nombre1;
         $ruta2 = storage_path() . '/app/public/imagenes/' . $nombre2;
 
-        $img1 = Image::make($request->file('file'))->resize(800, 800);
-        $img2 = Image::make($request->file('file'))->resize(800, 800);
+        $img1 = Image::make($request->file('file'))->resize(800, 800)->orientate();
+        $img2 = Image::make($request->file('file'))->resize(800, 800)->orientate();
 
         $logo1 = Image::make('https://enoctubrebdsevistederosa.com.co/img/logo.png')->resize(800, 800);
         $logo2 = Image::make('https://enoctubrebdsevistederosa.com.co/img/logo-2.png')->resize(800, 800);
@@ -85,7 +85,12 @@ class FileController extends Controller
         ]);
 
 
-        return  $request->file('file')->getClientOriginalName() ;
+        $array = [
+            'imagen1' => $nombre1,
+            'imagen2' => $nombre2,
+        ];
+
+        return  $array ;
 
 
 

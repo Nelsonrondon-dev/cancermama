@@ -145,17 +145,17 @@
                
                 $('#nuevo').append(
                     `<div class="col mb-4"><div class="card">
-                    <img src="`+window.location.origin + '/storage/imagenes/'+'1-' +response +`" class="card-img-top" alt="...">
+                    <img src="`+window.location.origin + '/storage/imagenes/'+ response.imagen1 +`" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <a href="`+window.location.origin + '/storage/imagenes/'+'1-' +response +`" class="btn btn-primary" download >Descargar ahora</a>
+                      <a href="`+window.location.origin + '/storage/imagenes/'+ response.imagen2 +`" class="btn btn-primary" download >Descargar ahora</a>
                     </div>
                      </div></div>`);
 
                      $('#nuevo').append(
                     `<div class="col mb-4"><div class="card">
-                    <img src="`+window.location.origin + '/storage/imagenes/' + '2-' +response +`" class="card-img-top" alt="...">
+                    <img src="`+window.location.origin + '/storage/imagenes/' + response.imagen1 +`" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <a href="`+window.location.origin + '/storage/imagenes/'+'2-' +response +`" class="btn btn-primary" download >Descargar ahora</a>
+                      <a href="`+window.location.origin + '/storage/imagenes/'+ response.imagen2 +`" class="btn btn-primary" download >Descargar ahora</a>
                     </div>
                      </div></div>`);
 
