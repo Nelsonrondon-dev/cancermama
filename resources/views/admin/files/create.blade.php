@@ -8,7 +8,7 @@
 
     <div class="" style="background: #ffafdc;padding-right: 1rem !important;" >
         <div class="row">
-            <img src="{{asset('img/banner.png')}}" alt="" style="width: 70vw;background: #ffafdc;">
+            <img class="tamno-banner" src="{{asset('img/banner.png')}}" alt="" style="background: #ffafdc;">
         </div>
         <div class="row justify-content-center" style="position: relative;top: 2vw;">
         

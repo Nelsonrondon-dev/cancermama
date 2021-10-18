@@ -19,6 +19,18 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+
+    <style>
+        .tamno-banne{
+            width: 70vw;
+        }
+
+        @media (max-width: 575.98px) { 
+            .tamno-banne{
+                width: 100vw !important;
+        }
+        }
+    </style>
     @yield('css')
 </head>
 <body>
@@ -40,6 +52,8 @@
     @yield('js')
 
     <style>
+
+        
         .dropzone {
     color: #40444f;
 	border: .2rem dashed #616778;
