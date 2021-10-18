@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Enoctubrebdsevistederosa</title>
 
     <!-- Scripts -->
     
@@ -26,7 +26,7 @@
 
         <nav class="navbar navbar-light "style="background-color: #fff;">
             <a class="navbar-brand" href="{{ url('/')}}">
-              <img src="{{ asset('img\logo-empresa.jpg') }}" width="100%" height="50px" class="d-inline-block align-top" alt="">
+              <img src="{{ asset('img\logo-empresa.jpg') }}" width="auto" height="50px" class="d-inline-block align-top" alt="">
             </a>
           </nav>
           
