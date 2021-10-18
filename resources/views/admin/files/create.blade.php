@@ -40,7 +40,7 @@
                     <h2 style="text-align: center; color: rgb(255, 175, 220); font-weight: 900;font-size: 2.25rem;">Descarga tu foto aquí</h2>
                 </div>
 
-                <div id="nuevo" class="row row-cols-1 row-cols-md-3 m-3">
+                <div id="nuevo" class="row row-cols-1 row-cols-md-3 m-3 justify-content-md-center">
 
                 <div id="muestra-1" class="col mb-4">
 
