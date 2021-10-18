@@ -22,7 +22,7 @@
 
     <style>
         .tamno-banner{
-            width: 70vw;
+            width: 80vw;
         }
 
         @media (max-width: 575.98px) { 
