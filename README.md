@@ -67,7 +67,7 @@
 
 
 
-# Portal Admisiones
+# Application Web 
 
 Application Web made in Laravel 7. For the company ["Advancing the world of health" BD](https://www.bd.com/en-us), for the world cancer day event, that allows you to add a filter to the uploaded images
 
